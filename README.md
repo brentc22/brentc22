@@ -68,10 +68,11 @@ biggest difference between a system you trust and one you hope about.
 
 ## Open source
 
-**[stash](https://github.com/brentc22/stash)** — research and design for a macOS 27 menu bar
-hider. macOS 27 rewrote the menu bar as a single window, which broke Ice, Bartender and every
-other tool in that category at once. The repository documents what changed, what still works,
-and why — measured on a real machine rather than guessed at.
+**[stash](https://github.com/brentc22/stash)** — a free, open source menu bar hider for macOS 27.
+The macOS 27 rewrite drew the menu bar as a single window, which broke every tool in that
+category at once; some have since rebuilt on the new architecture, and Ice never did. The
+repository documents what changed and what is left to build on — measured on a real machine
+rather than guessed at.
 
 <br>
 
