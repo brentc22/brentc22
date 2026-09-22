@@ -23,11 +23,9 @@ Custom CRM and operations platforms — from the first inbound lead to the settl
 
 ## What I build
 
-Custom CRM and operations platforms for companies that outgrew their spreadsheets and then
-discovered that off-the-shelf software does not fit the way they actually work. Not a dashboard
-bolted onto a database — the system the entire company spends its day inside.
-
-A platform like that tends to cover the whole chain:
+Platforms for companies that outgrew their spreadsheets and then found that off-the-shelf
+software does not fit the way they actually work. Not a dashboard bolted onto a database — the
+system the whole company spends its day inside.
 
 | | |
 | :-- | :-- |
@@ -37,51 +35,73 @@ A platform like that tends to cover the whole chain:
 | **People** | role-based access, HR, training |
 | **Outward-facing** | customer portals, partner flows, marketing attribution |
 
-Every role gets an interface built for the work it does, rather than one screen with everything
+Every role gets an interface built for the work it does, instead of one screen with the rest
 hidden behind permissions. I own these end to end: the domain modelling, the architecture, the
 database, the deploys — and the phone call when something breaks on a Saturday.
 
 <br>
 
+## Things you can install
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [catchbox](https://github.com/brentc22/catchbox)
+
+Disposable inboxes for developers. One mailbox per flow, with the one-time code and the action
+link pulled out for you — plus a deliverability read of the headers, which is usually the answer
+to *why did this land in spam*.
+
+```sh
+brew install brentc22/tap/catchbox
+```
+
+</td>
+<td width="50%" valign="top">
+
+### [Stash](https://github.com/brentc22/stash)
+
+A free menu bar hider for macOS 27. The macOS 27 rewrite drew the menu bar as a single window
+and broke every tool in that category at once. The repository documents what changed, measured
+on a real machine rather than guessed at.
+
+```sh
+brew install --cask brentc22/stash/stash
+```
+
+</td>
+</tr>
+</table>
+
+<br>
+
 ## How I work
 
-**Correctness before cleverness wherever money is involved.**
-Line-item pricing, VAT regimes and invoice totals are guarded by database-level invariant checks
-that run on a schedule and alert only when the state *changes*. An alarm that repeats every
-fifteen minutes gets dismissed, and is worthless from then on.
+**Correctness before cleverness wherever money is involved.** Pricing, VAT regimes and invoice
+totals are guarded by database-level invariants that run on a schedule and alert only when the
+state *changes* — an alarm that repeats every fifteen minutes gets dismissed, and is worthless
+from then on.
 
-**Access control is not something you bolt on afterwards.**
-A public customer portal sitting on the same database as internal finance data means every
-row-level policy and every grant is load-bearing. I assume a policy is broken until I have
-watched it refuse the request.
+**Access control is not something you bolt on afterwards.** A public customer portal on the same
+database as internal finance data makes every row-level policy load-bearing. I assume a policy is
+broken until I have watched it refuse the request.
 
-**Every incident becomes a written rule.**
-Anything that cost real time gets documented in the repository — the rule, and the story behind
-it. A warning in prose only works if you happen to read it right before you would have made the
-mistake, so the ones that matter become automated checks instead.
+**Every incident becomes a written rule,** and the ones that matter become automated checks —
+a warning in prose only helps if you read it in the minute before you would have made the mistake.
 
-**Measured, not assumed.**
-Before I claim something works, I run the check and read the output. That habit is the single
-biggest difference between a system you trust and one you hope about.
+**Measured, not assumed.** Before I claim something works, I run the check and read the output.
+That habit is the single biggest difference between a system you trust and one you hope about.
 
 <br>
-
-## Open source
-
-**[stash](https://github.com/brentc22/stash)** — a free, open source menu bar hider for macOS 27.
-The macOS 27 rewrite drew the menu bar as a single window, which broke every tool in that
-category at once; some have since rebuilt on the new architecture, and Ice never did. The
-repository documents what changed and what is left to build on — measured on a real machine
-rather than guessed at.
-
-<br>
-
-## Elsewhere
-
-Most of my work lives in private client repositories, so the contribution graph tells the story
-rather better than the repository list does.
 
 <div align="center">
+
+Most of my work lives in private client repositories, so the graph below tells the story rather
+better than the repository list does.
+
 <br>
+
 <sub>Belgium · open to interesting problems</sub>
+
 </div>
