@@ -54,8 +54,6 @@ link pulled out for you — plus a deliverability read of the headers, which is 
 to *why did this land in spam*.
 
 ```sh
-brew tap brentc22/tap
-brew trust brentc22/tap
 brew install brentc22/tap/catchbox
 ```
 
@@ -69,8 +67,6 @@ and broke every tool in that category at once. The repository documents what cha
 on a real machine rather than guessed at.
 
 ```sh
-brew tap brentc22/stash
-brew trust brentc22/stash
 brew install --cask brentc22/stash/stash
 ```
 
@@ -86,8 +82,6 @@ finds emails, IBANs, card numbers and API keys, checks them (an IBAN has to pass
 and pixelates them in one click.
 
 ```sh
-brew tap brentc22/tap
-brew trust brentc22/tap
 brew install --cask brentc22/tap/glint
 ```
 
@@ -100,8 +94,6 @@ Every dev server on your Mac in the menu bar, grouped by repo and git worktree. 
 branch started what is on `:5174`, and stop it in one click.
 
 ```sh
-brew tap brentc22/tap
-brew trust brentc22/tap
 brew install --cask brentc22/tap/portside
 ```
 
