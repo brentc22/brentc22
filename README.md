@@ -72,6 +72,33 @@ brew install --cask brentc22/stash/stash
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Glint](https://github.com/brentc22/glint)
+
+A screenshot tool that blurs your secrets before you share them. On-device text recognition
+finds emails, IBANs, card numbers and API keys, checks them (an IBAN has to pass its checksum),
+and pixelates them in one click.
+
+```sh
+brew install --cask brentc22/tap/glint
+```
+
+</td>
+<td width="50%" valign="top">
+
+### [Portside](https://github.com/brentc22/portside)
+
+Every dev server on your Mac in the menu bar, grouped by repo and git worktree. See which
+branch started what is on `:5174`, and stop it in one click.
+
+```sh
+brew install --cask brentc22/tap/portside
+```
+
+</td>
+</tr>
 </table>
 
 <br>
